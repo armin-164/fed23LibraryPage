@@ -18,8 +18,12 @@ function createBook(arr) {
       bookStatus.innerText = "Unavailable";
     }
 
+    const learnMoreButton = document.createElement('button');
+    learnMoreButton.innerText = 'Learn More';
+
     bookCard.appendChild(bookTitle);
     bookCard.appendChild(bookStatus);
+    bookCard.appendChild(learnMoreButton);
 
     bookContainer.appendChild(bookCard);
   });
