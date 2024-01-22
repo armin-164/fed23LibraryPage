@@ -1,3 +1,5 @@
+import fetchData from "./retrieveData";
+
 function addBookData() {
     const inputTitle = document.getElementById('title').value;
     const inputPages = document.getElementById('pages').value;
@@ -23,8 +25,7 @@ function addBookData() {
           .then(data => console.log('Server response:', data))
           .catch(error => console.error('Error:', error));
         
-
-        console.log(book)
+          fetchData();
     }
 }
 
