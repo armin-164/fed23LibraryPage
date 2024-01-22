@@ -1,5 +1,3 @@
-import fetchData from "./retrieveData";
-
 function createBook(arr) {
   const bookContainer = document.querySelector(".books-container");
 
@@ -29,9 +27,5 @@ function createBook(arr) {
   });
 }
 
-async function displayData() {
-  const myData = await fetchData();
-  createBook(myData);
-}
 
-export { displayData };
+export { createBook };
