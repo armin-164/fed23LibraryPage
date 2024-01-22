@@ -1,1 +1,3 @@
-console.log('hey');
+import { displayData } from "./scripts/displayBooks";
+
+displayData();
